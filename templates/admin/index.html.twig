@@ -1,0 +1,119 @@
+{% extends '@EasyAdmin/page/content.html.twig' %}
+
+{% block content %}
+
+<h2 style="text-align: center; margin-bottom: 20px;">Overviews</h2>
+<br>
+<br>
+<br>
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px; max-width: 1200px; margin: 0 auto 50px;">
+    <!-- Doughnut: Candidates vs Employers -->
+    <div style="width: 300px; text-align: center;">
+        <canvas id="chart_users_vs_candidates" width="200" height="200"></canvas>
+        <h4 class="mt-2">Candidats vs Employeurs</h4>
+        <p><strong>{{ counts.candidates }}</strong> candidats | <strong>{{ counts.users }}</strong> employeurs</p>
+    </div>
+
+    <!-- Doughnut: Jobs -->
+    <div style="width: 300px; text-align: center;">
+        <canvas id="chart_jobs" width="200" height="200"></canvas>
+        <h4 class="mt-2">Offres d'emploi</h4>
+        <p><strong>{{ counts.jobs }}</strong> offres</p>
+    </div>
+
+    <!-- Doughnut: Companies -->
+    <div style="width: 300px; text-align: center;">
+        <canvas id="chart_companies" width="200" height="200"></canvas>
+        <h4 class="mt-2">Entreprises</h4>
+        <p><strong>{{ counts.companies }}</strong> inscrites</p>
+    </div>
+</div>
+
+<hr class="my-5">
+<h2 style="text-align: center; margin-bottom: 30px;">Statistics</h2>
+<br>
+<br>
+<br>
+<div style="max-width: 1200px; margin: 0 auto;">
+    <canvas id="bar_stats_table" height="300" width="500"></canvas> {# Increased from 300 to 500 #}
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    const counts = {{ counts|json_encode|raw }};
+    const statsTable = {{ statsTable|json_encode|raw }};
+
+    // Doughnut: Candidates vs Employers
+    new Chart(document.getElementById('chart_users_vs_candidates'), {
+        type: 'doughnut',
+        data: {
+            labels: ['Candidats', 'Employeurs'],
+            datasets: [{
+                data: [counts.candidates, counts.users],
+                backgroundColor: ['#36A2EB', '#FF6384'],
+                borderColor: ['#36A2EB', '#FF6384'],
+                borderWidth: 1,
+                cutout: '70%'
+            }]
+        },
+        options: { plugins: { legend: { position: 'bottom' } } }
+    });
+
+    // Doughnut: Jobs
+    new Chart(document.getElementById('chart_jobs'), {
+        type: 'doughnut',
+        data: {
+            labels: ['Offres'],
+            datasets: [{
+                data: [counts.jobs],
+                backgroundColor: ['#FFCE56'],
+                borderColor: ['#FFCE56'],
+                borderWidth: 1,
+                cutout: '70%'
+            }]
+        },
+        options: { plugins: { legend: { display: false } } }
+    });
+
+    // Doughnut: Companies
+    new Chart(document.getElementById('chart_companies'), {
+        type: 'doughnut',
+        data: {
+            labels: ['Entreprises'],
+            datasets: [{
+                data: [counts.companies],
+                backgroundColor: ['#4BC0C0'],
+                borderColor: ['#4BC0C0'],
+                borderWidth: 1,
+                cutout: '70%'
+            }]
+        },
+        options: { plugins: { legend: { display: false } } }
+    });
+
+    // Bar chart: Stats Table
+    new Chart(document.getElementById('bar_stats_table'), {
+        type: 'bar',
+        data: {
+            labels: statsTable.map(stat => stat.label),
+            datasets: [{
+                label: 'Statistiques',
+                data: statsTable.map(stat => stat.value),
+                backgroundColor: ['#36A2EB', '#FF6384', '#FFCE56', '#4BC0C0'],
+                borderRadius: 10,
+                barThickness: 90 // Increased width
+            }]
+        },
+        options: {
+            responsive: true,
+            plugins: { legend: { display: false } },
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    ticks: { stepSize: 1000 }
+                }
+            }
+        }
+    });
+</script>
+{% endblock %}
