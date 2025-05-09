@@ -1,0 +1,24 @@
+App\Entity\TeamMember:
+    team_member_1:
+        name: "Shevin Ligiah"
+        role: "Software Developer - Expert .NET & Vue.js"
+        image: "/placeholder.svg"
+        description: "Développeur logiciel avec une expertise avancée en .NET et Vue.js. Passionné par la création d'applications robustes et performantes."
+
+    team_member_2:
+        name: "Pushtika Reesaul"
+        role: "Software Developer - Expert .NET & Vue.js"
+        image: "/placeholder.svg"
+        description: "Spécialiste en développement full-stack avec une forte maîtrise de .NET et Vue.js. Expérience approfondie dans la conception d'applications modernes."
+
+    team_member_3:
+        name: "Grishma Ramloul"
+        role: "Frontend Developer - Expert Vue.js"
+        image: "/placeholder.svg"
+        description: "Développeuse front-end spécialisée en Vue.js. Passionnée par l'amélioration de l'expérience utilisateur et le développement d'interfaces dynamiques."
+
+    team_member_4:
+        name: "Anmol Vishvas"
+        role: "Software Developer - Expert PHP Symfony & Vue.js"
+        image: "/placeholder.svg"
+        description: "Développeur backend et frontend avec une expertise poussée en PHP Symfony et Vue.js. Expérience dans la construction d'applications performantes et évolutives."

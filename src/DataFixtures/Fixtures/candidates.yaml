@@ -1,0 +1,88 @@
+App\Entity\Candidate:
+    candidate_1:
+        id: 1
+        name: "Sophie Martin"
+        avatar: "/placeholder.svg"
+        title: "Développeuse Full-Stack"
+        location: "Paris, France"
+        experience: "5 ans"
+        skills: ["React", "Node.js", "TypeScript", "MongoDB"]
+        education: "Master en Informatique - Université Paris Saclay"
+        bio: "Développeuse passionnée avec 5 ans d'expérience dans la création d'applications web innovantes. Spécialisée dans les technologies JavaScript modernes."
+
+    candidate_2:
+        id: 2
+        name: "Thomas Dubois"
+        avatar: "/placeholder.svg"
+        title: "UX/UI Designer"
+        location: "Lyon, France"
+        experience: "3 ans"
+        skills: ["Figma", "Adobe XD", "User Research", "Wireframing"]
+        education: "Diplôme en Design Numérique - ESAD Grenoble"
+        bio: "Designer créatif spécialisé dans la conception d'interfaces utilisateur intuitives et esthétiques. Approche centrée sur l'utilisateur avec une forte attention aux détails."
+
+    candidate_3:
+        id: 3
+        name: "Emma Blanc"
+        avatar: "/placeholder.svg"
+        title: "Data Scientist"
+        location: "Marseille, France"
+        experience: "4 ans"
+        skills: ["Python", "R", "Machine Learning", "SQL", "TensorFlow"]
+        education: "Doctorat en Intelligence Artificielle - École Polytechnique"
+        bio: "Data scientist expérimentée spécialisée dans le machine learning et l'analyse de données. Forte expertise en développement d'algorithmes prédictifs et visualisation de données."
+
+    candidate_4:
+        id: 4
+        name: "Alexandre Moreau"
+        avatar: "/placeholder.svg"
+        title: "DevOps Engineer"
+        location: "Bordeaux, France"
+        experience: "6 ans"
+        skills: ["AWS", "Docker", "Kubernetes", "CI/CD", "Terraform"]
+        education: "Ingénieur en Informatique - INSA Toulouse"
+        bio: "Ingénieur DevOps avec expérience dans l'automatisation de déploiements, l'administration cloud et l'optimisation d'infrastructures. Expert en solutions AWS et conteneurisation."
+
+    candidate_5:
+        id: 5
+        name: "Chloé Leroy"
+        avatar: "/placeholder.svg"
+        title: "Product Manager"
+        location: "Nantes, France"
+        experience: "7 ans"
+        skills: ["Gestion de Produit", "Agile", "Analyse Marketing", "UX"]
+        education: "MBA - HEC Paris"
+        bio: "Product manager expérimentée dans le développement et le lancement de produits numériques innovants. Forte capacité à traduire les besoins utilisateurs en fonctionnalités concrètes."
+
+    candidate_6:
+        id: 6
+        name: "Romain Petit"
+        avatar: "/placeholder.svg"
+        title: "Développeur Mobile"
+        location: "Lille, France"
+        experience: "4 ans"
+        skills: ["Swift", "Kotlin", "Flutter", "Firebase"]
+        education: "Licence en Développement Mobile - Université de Lille"
+        bio: "Développeur mobile spécialisé dans la création d'applications iOS et Android performantes et intuitives. Passionné par l'UX mobile et les nouvelles technologies."
+
+    candidate_7:
+        id: 7
+        name: "Léa Bernard"
+        avatar: "/placeholder.svg"
+        title: "Marketing Digital"
+        location: "Toulouse, France"
+        experience: "5 ans"
+        skills: ["SEO", "SEM", "Analytics", "Réseaux Sociaux"]
+        education: "Master Marketing Digital - Toulouse Business School"
+        bio: "Spécialiste en marketing digital avec expertise en stratégies d'acquisition et fidélisation client. Compétences avancées en analyse de données marketing et optimisation conversion."
+
+    candidate_8:
+        id: 8
+        name: "Julien Robert"
+        avatar: "/placeholder.svg"
+        title: "Architecte Logiciel"
+        location: "Paris, France"
+        experience: "8 ans"
+        skills: ["Java", "Microservices", "API Design", "Spring Boot"]
+        education: "Ingénieur Informatique - CentraleSupélec"
+        bio: "Architecte logiciel senior avec expertise en conception de systèmes distribués et microservices. Forte expérience dans le développement d'applications à grande échelle."

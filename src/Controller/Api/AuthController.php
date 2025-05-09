@@ -4,6 +4,7 @@ namespace App\Controller\Api;
 
 use App\Entity\User;
 use Doctrine\ORM\EntityManagerInterface;
+use Lexik\Bundle\JWTAuthenticationBundle\Services\JWTTokenManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -19,7 +20,8 @@ class AuthController extends AbstractController
         Request $request,
         UserPasswordHasherInterface $passwordHasher,
         EntityManagerInterface $entityManager,
-        MailerInterface $mailer
+        MailerInterface $mailer,
+        JWTTokenManagerInterface $jwtManager
     ): Response {
         $data = json_decode($request->getContent(), true);
 
@@ -48,10 +50,17 @@ class AuthController extends AbstractController
             ->text(sprintf('Hello %s, you have successfully registered to our Dream Job Forge Platform!', $user->getFirstName()));
 
         $mailer->send($email);
+        $token = $jwtManager->create($user);
 
         return $this->json([
-            'message' => 'User registered successfully',
-            'userId' => $user->getId()
+            'token' => $token,
+            'user' => [
+                'id' => $user->getId(),
+                'email' => $user->getEmail(),
+                'firstName' => $user->getFirstName(),
+                'lastName' => $user->getLastName(),
+                'role' => $user->getUserType() === 'employer' ? 'recruiter' : 'candidate',
+            ]
         ], Response::HTTP_CREATED);
     }
 }

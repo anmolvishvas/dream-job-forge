@@ -3,9 +3,10 @@
 namespace App\Entity;
 
 use ApiPlatform\Metadata\ApiResource;
+use App\Repository\TeamMemberRepository;
 use Doctrine\ORM\Mapping as ORM;
 
-#[ORM\Entity]
+#[ORM\Entity(repositoryClass: TeamMemberRepository::class)]
 #[ApiResource]
 class TeamMember
 {

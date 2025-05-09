@@ -12,3 +12,4 @@ services:
             - '../src/Entity/'
             - '../src/Kernel.php'
 
+    App\Doctrine\AliceDataFixtures\Provider\DateTimeImmutableProvider: ~

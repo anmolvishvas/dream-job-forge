@@ -15,4 +15,9 @@ class UserRepository extends ServiceEntityRepository
     {
         parent::__construct($registry, User::class);
     }
+
+    public function findById(int $id): ?User
+    {
+        return $this->find($id);
+    }
 }

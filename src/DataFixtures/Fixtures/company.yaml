@@ -1,0 +1,111 @@
+App\Entity\Company:
+  company_1:
+    id: 1
+    name: "TechVision"
+    logo: "/placeholder.svg"
+    industry: "Technologie"
+    location: "Paris, France"
+    employees: "50-200"
+    jobs: 15
+    description: "TechVision est une entreprise innovante spécialisée dans le développement de solutions d'intelligence artificielle et de réalité augmentée pour les secteurs de la santé et de l'éducation."
+    website: "www.techvision.fr"
+    founded: "2015"
+    company_values:
+      - "Innovation constante"
+      - "Collaboration"
+      - "Excellence technique"
+      - "Responsabilité sociale"
+    benefits:
+      - "Horaires flexibles"
+      - "Télétravail partiel"
+      - "Formation continue"
+      - "Tickets restaurant"
+
+  company_2:
+    id: 2
+    name: "GreenEco Solutions"
+    logo: "/placeholder.svg"
+    industry: "Environnement"
+    location: "Lyon, France"
+    employees: "10-50"
+    jobs: 8
+    description: "GreenEco Solutions propose des services de conseil en développement durable et des solutions technologiques innovantes."
+    website: "www.greenecosoluciones.fr"
+    founded: "2018"
+    company_values:
+      - "Développement durable"
+      - "Transparence"
+      - "Impact positif"
+    benefits:
+      - "Semaine de 4 jours"
+      - "Travail hybride"
+      - "Congés solidaires"
+
+  company_3:
+    id: 3
+    name: "FinTech Innovations"
+    logo: "/placeholder.svg"
+    industry: "Finance"
+    location: "Paris, France"
+    employees: "200-500"
+    jobs: 24
+    description: "FinTech Innovations révolutionne le secteur bancaire avec ses plateformes de paiement sécurisées."
+    website: "www.fintechinnovations.fr"
+    founded: "2012"
+    company_values:
+      - "Sécurité"
+      - "Accessibilité financière"
+      - "Transparence"
+    benefits:
+      - "Bonus de performance"
+      - "Assurance internationale"
+
+  company_4:
+    id: 4
+    name: "MediaCraft"
+    logo: "/placeholder.svg"
+    industry: "Médias & Communication"
+    location: "Bordeaux, France"
+    employees: "10-50"
+    jobs: 5
+    description: "MediaCraft est une agence de communication spécialisée dans la production de contenu digital."
+
+  company_5:
+    id: 5
+    name: "HealthTech"
+    logo: "/placeholder.svg"
+    industry: "Santé"
+    location: "Lille, France"
+    employees: "50-200"
+    jobs: 12
+    description: "HealthTech développe des applications mobiles et des dispositifs connectés pour améliorer le suivi médical."
+
+  company_6:
+    id: 6
+    name: "DataInsight"
+    logo: "/placeholder.svg"
+    industry: "Analyse de données"
+    location: "Nantes, France"
+    employees: "10-50"
+    jobs: 7
+    description: "DataInsight aide les entreprises à exploiter leurs données pour prendre des décisions stratégiques."
+
+  company_7:
+    id: 7
+    name: "CloudTech"
+    logo: "/placeholder.svg"
+    industry: "Cloud Computing"
+    location: "Toulouse, France"
+    employees: "50-200"
+    jobs: 16
+    description: "CloudTech fournit des infrastructures cloud sécurisées et des services de migration."
+
+  company_8:
+    id: 8
+    name: "InnovateCorp"
+    logo: "/placeholder.svg"
+    industry: "Innovation"
+    location: "Strasbourg, France"
+    employees: "200-500"
+    jobs: 20
+    description: "InnovateCorp est un incubateur de startups accompagnant les entrepreneurs innovants."

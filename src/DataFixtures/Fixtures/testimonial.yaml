@@ -1,0 +1,40 @@
+App\Entity\Testimonial:
+  testimonial_1:
+    name: "Sophie Martin"
+    role: "Développeuse Frontend"
+    company: "TechVision"
+    avatar: "/placeholder.svg"
+    content: "Grâce à DreamJobForge, j'ai trouvé mon emploi idéal en seulement deux semaines. L'interface était intuitive et le processus de candidature très fluide."
+    rating: 5
+
+  testimonial_2:
+    name: "Thomas Dubois"
+    role: "Product Manager"
+    company: "InnovateNow"
+    avatar: "/placeholder.svg"
+    content: "En tant que recruteur, j'ai pu trouver des candidats de qualité très rapidement. Les outils de filtrage sont particulièrement efficaces."
+    rating: 4
+
+  testimonial_3:
+    name: "Emma Leclerc"
+    role: "UX Designer"
+    company: "DesignStudio"
+    avatar: "/placeholder.svg"
+    content: "Après plusieurs mois de recherche infructueuse, j'ai trouvé mon poste de rêve en quelques jours sur DreamJobForge. Le matching AI a fait toute la différence!"
+    rating: 5
+
+  testimonial_4:
+    name: "Lucas Bernard"
+    role: "Data Engineer"
+    company: "DataInsight"
+    avatar: "/placeholder.svg"
+    content: "La plateforme est vraiment orientée vers les métiers spécialisés. J'ai pu trouver des offres pertinentes que je n'avais pas vues ailleurs."
+    rating: 5
+
+  testimonial_5:
+    name: "Julie Moreau"
+    role: "Responsable RH"
+    company: "GreenEco"
+    avatar: "/placeholder.svg"
+    content: "L'outil de gestion des candidatures a transformé notre processus de recrutement. Nous avons réduit le temps d'embauche de 40%."
+    rating: 4

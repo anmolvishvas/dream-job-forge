@@ -1,0 +1,40 @@
+App\Entity\User:
+    user_1:
+        email: "shevinlingiah@gmail.com"
+        roles: ["ROLE_EMPLOYER"]
+        password: "Shevin2709"
+        firstName: "Shevin"
+        lastName: "Lingiah"
+        userType: "employer"
+
+    user_2:
+        email: "ayushvishvas@gmail.com"
+        roles: ["ROLE_EMPLOYER"]
+        password: "Ayush2610"
+        firstName: "Ayush"
+        lastName: "Vishvas"
+        userType: "employer"
+
+    user_3:
+        email: "avirajreetoo@gmail.com"
+        roles: ["ROLE_EMPLOYER"]
+        password: "Aviraj0108"
+        firstName: "Aviraj"
+        lastName: "Reetoo"
+        userType: "employer"
+
+    user_4:
+        email: "pushtikareesaul@gmail.com"
+        roles: ["ROLE_EMPLOYER"]
+        password: "Pushtika1004"
+        firstName: "Pushtika"
+        lastName: "Reesaul"
+        userType: "employer"
+
+    user_5:
+        email: "nishitchotai734@gmail.com"
+        roles: ["ROLE_EMPLOYER"]
+        password: "Nishit2109"
+        firstName: "Nishit"
+        lastName: "Chotai"
+        userType: "employer"

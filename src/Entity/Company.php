@@ -42,7 +42,7 @@ class Company
     private ?string $founded = null;
 
     #[ORM\Column(type: 'json', nullable: true)]
-    private ?array $values = [];
+    private ?array $companyValues  = [];
 
     #[ORM\Column(type: 'json', nullable: true)]
     private ?array $benefits = [];
@@ -151,14 +151,14 @@ class Company
         return $this;
     }
 
-    public function getValues(): ?array
+    public function getCompanyValues(): ?array
     {
-        return $this->values;
+        return $this->companyValues;
     }
 
-    public function setValues(?array $values): self
+    public function setCompanyValues(?array $companyValues): self
     {
-        $this->values = $values;
+        $this->companyValues = $companyValues;
         return $this;
     }
 

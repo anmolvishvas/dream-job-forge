@@ -1,0 +1,16 @@
+App\Entity\Stat:
+  stat_1:
+    number: "15,000+"
+    label: "Offres d'emploi"
+
+  stat_2:
+    number: "2,500+"
+    label: "Entreprises"
+
+  stat_3:
+    number: "50,000+"
+    label: "Candidats"
+
+  stat_4:
+    number: "95%"
+    label: "Taux de satisfaction"

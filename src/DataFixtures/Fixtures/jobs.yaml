@@ -1,0 +1,181 @@
+App\Entity\Job:
+  job1:
+    title: "Développeur Full-Stack JavaScript"
+    company: "TechInnovate"
+    location: "Paris, France"
+    salary: "50-65k €"
+    type: "CDI"
+    posted: "2025-05-07 00:00:00"
+    logo: "/placeholder.svg"
+    tags:
+      - "React"
+      - "Node.js"
+      - "MongoDB"
+    description: "Nous recherchons un développeur Full-Stack JavaScript expérimenté..."
+    requirements:
+      - "3+ ans d'expérience en développement Full-Stack JavaScript"
+      - "Maîtrise de React, Node.js et MongoDB"
+    responsibilities:
+      - "Développer et maintenir des applications web"
+      - "Collaborer avec l'équipe de conception"
+    benefits:
+      - "Horaires flexibles"
+      - "Télétravail"
+      - "Formation continue"
+
+  job2:
+    title: "Chef de Projet Digital"
+    company: "AgenceCreative"
+    location: "Lyon, France"
+    salary: "45-55k €"
+    type: "CDI"
+    posted: "2025-05-06 00:00:00"
+    logo: "/placeholder.svg"
+    tags:
+      - "Gestion de Projet"
+      - "Marketing Digital"
+      - "Agile"
+    description: "AgenceCreative recherche un Chef de Projet Digital passionné..."
+    requirements:
+      - "Expérience en gestion de projet"
+      - "Connaissance des outils Agile"
+    responsibilities:
+      - "Superviser les phases de projets"
+      - "Coordonner avec les équipes"
+    benefits:
+      - "Horaires flexibles"
+      - "Congés supplémentaires"
+
+  job3:
+    title: "Data Scientist"
+    company: "DataTech"
+    location: "Paris, France"
+    salary: "60-75k €"
+    type: "CDI"
+    posted: "2025-05-04 00:00:00"
+    logo: "/placeholder.svg"
+    tags:
+      - "Python"
+      - "R"
+      - "Machine Learning"
+    description: "DataTech recherche un Data Scientist pour analyser les données..."
+    requirements:
+      - "Master en Data Science"
+      - "Expérience avec Python et R"
+    responsibilities:
+      - "Développer des modèles prédictifs"
+      - "Analyser les données"
+    benefits:
+      - "Assurance santé"
+      - "Télétravail"
+
+  job4:
+    title: "Ingénieur DevOps"
+    company: "TechCloud"
+    location: "Lyon, France"
+    salary: "55-70k €"
+    type: "CDI"
+    posted: "2025-05-02 00:00:00"
+    logo: "/placeholder.svg"
+    tags:
+      - "AWS"
+      - "Docker"
+      - "Kubernetes"
+    description: "Nous cherchons un Ingénieur DevOps pour gérer notre infrastructure cloud..."
+    requirements:
+      - "3 ans d'expérience"
+      - "Connaissance des outils DevOps"
+    responsibilities:
+      - "Mettre en place des pipelines CI/CD"
+      - "Maintenir l'infrastructure"
+    benefits:
+      - "Horaires flexibles"
+      - "Tickets restaurant"
+
+  job5:
+    title: "Responsable Marketing"
+    company: "GreenTech"
+    location: "Paris, France"
+    salary: "50-60k €"
+    type: "CDI"
+    posted: "2025-04-29 00:00:00"
+    logo: "/placeholder.svg"
+    tags:
+      - "SEO"
+      - "SEM"
+      - "PPC"
+    description: "GreenTech recrute un responsable marketing pour gérer notre stratégie digitale..."
+    requirements:
+      - "Expérience en marketing digital"
+      - "Compétences en SEO et SEM"
+    responsibilities:
+      - "Gérer les campagnes PPC"
+      - "Développer la stratégie SEO"
+    benefits:
+      - "Plan d'actionnariat"
+      - "Bonus de performance"
+
+  job6:
+    title: "Product Manager"
+    company: "InnovateCorp"
+    location: "Strasbourg, France"
+    salary: "65-80k €"
+    type: "CDI"
+    posted: "2025-04-25 00:00:00"
+    logo: "/placeholder.svg"
+    tags:
+      - "Product Management"
+      - "Agile"
+    description: "InnovateCorp recherche un Product Manager expérimenté pour rejoindre son équipe..."
+    requirements:
+      - "5 ans d'expérience en gestion de produit"
+    responsibilities:
+      - "Gérer le cycle de vie des produits"
+      - "Analyser les tendances du marché"
+    benefits:
+      - "Assurance santé"
+      - "Participation aux bénéfices"
+
+  job7:
+    title: "Développeur Front-End"
+    company: "MediaCraft"
+    location: "Bordeaux, France"
+    salary: "40-55k €"
+    type: "CDI"
+    posted: "2025-04-27 00:00:00"
+    logo: "/placeholder.svg"
+    tags:
+      - "Vue.js"
+      - "JavaScript"
+    description: "MediaCraft recherche un Développeur Front-End pour ses projets..."
+    requirements:
+      - "Connaissance de Vue.js"
+      - "Maîtrise de JavaScript"
+    responsibilities:
+      - "Développer des interfaces utilisateur"
+      - "Collaborer avec les designers"
+    benefits:
+      - "Horaires flexibles"
+      - "Formation continue"
+
+  job8:
+    title: "Consultant en Stratégie"
+    company: "CloudConsulting"
+    location: "Toulouse, France"
+    salary: "50-65k €"
+    type: "CDI"
+    posted: "2025-05-06 00:00:00"
+    logo: "/placeholder.svg"
+    tags:
+      - "Stratégie"
+      - "Consulting"
+    description: "CloudConsulting recherche un consultant pour accompagner ses clients..."
+    requirements:
+      - "Expérience en consulting"
+      - "Compétences en analyse de marché"
+    responsibilities:
+      - "Accompagner les clients"
+      - "Développer des solutions stratégiques"
+    benefits:
+      - "Télétravail"
+      - "Congés supplémentaires"
