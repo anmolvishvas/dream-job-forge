@@ -3,9 +3,10 @@
 namespace App\Entity;
 
 use ApiPlatform\Metadata\ApiResource;
+use App\Repository\StatRepository;
 use Doctrine\ORM\Mapping as ORM;
 
-#[ORM\Entity(repositoryClass: Stat::class)]
+#[ORM\Entity(repositoryClass: StatRepository::class)]
 #[ApiResource]
 class Stat
 {
