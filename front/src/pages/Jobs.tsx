@@ -69,6 +69,7 @@ const Jobs = () => {
 
     fetchData();
   }, []);
+
   // Logique de filtrage des offres
   const filteredJobs = jobs.filter((job) => {
     const matchesSearch =
